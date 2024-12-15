@@ -1,0 +1,404 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #283618;
+    color: #283618;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    background-image: url('https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    color: #283618;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.botao-header {
+    background: #606C38; 
+    color: #F9F9F9;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.botao-header:hover {
+    background-color: #283618;
+}
+
+
+/* BARRA DE NAVEGAÇÃO */
+.barra-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #283618;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 100;
+}
+
+.container-nav {
+    flex: 1;
+    margin: 0 20px;
+    width: 100px; 
+}
+
+/* Menu de Navegação */
+.menu-nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    height: 100%;          
+}
+
+.menu-nav ul {
+    display: flex;
+    gap: 20px; 
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+}
+
+.menu-nav li {
+    display: inline-block;
+}
+
+.menu-nav a {
+    font-size: 1.25rem;    
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu-nav a:hover {
+    color: #DDA15E;
+}
+
+/* SOBRE */
+.sobre {
+    text-align: center;
+    padding: 40px;
+    background: #AFB38C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sobre h2 {
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+
+.sobre p {
+    margin-bottom: 15px;
+    text-indent: 1.5em;
+}
+
+/* Itens Sobre*/
+.lista-topicos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.item-sobre {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    justify-content: center;
+    text-align: center;
+}
+
+.item-sobre:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.lista-topicos h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+/* Responsividade Itens Sobre */
+@media (min-width: 768px) {
+    .item-sobre {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .item-sobre {
+        width: calc(25% - 20px);
+    }
+}
+
+/* Botão */
+.botão {
+    background: #606C38; 
+    color: #F9F9F9;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.botão:hover {
+    background: #283618; 
+    transform: scale(1.1);
+}
+
+/* Curiosidades */
+#curiosidades {
+    height: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: block; 
+    text-align: center;
+    border-radius: 15px;
+    background: #F9F9F9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#curiosidades h3 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+#curiosidades p {
+    margin-bottom: 30px;
+    text-indent: 1.5em;
+}
+
+/* RECEITAS */
+#receitas {
+    padding: 60px 20px;
+    background-color: #FEFAE0;
+    text-align: center;
+}
+
+#receitas h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #BC6C25;
+}
+
+#receitas p {
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #BC6C25;
+}
+
+/* Cartões de Receita */
+.cartoes-receitas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.cartao {
+    flex: 1 1 30%;
+    margin: 10px;
+    background-color: #FDFDFD;
+    padding: 20px;
+    border-radius: 15px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.cartao:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cartao img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.cartao h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #BC6C25;
+}
+
+.botao-receita {
+    background: #DDA15E; 
+    color: #F9F9F9;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.botao-receita:hover {
+    background-color: #BC6C25;
+    transform: scale(1.1);
+}
+
+/* Responsividade Receitas */
+@media (max-width: 768px) {
+    .cartao {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cartao {
+        flex: 1 1 100%;
+    }
+}
+
+/* CONTATO */
+.contato {
+    background: #F9F9F9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contato p{
+    margin-bottom: 20px;
+}
+
+.contato form {
+    display: grid;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contato input, .contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DAD7CD;
+    border-radius: 5px;
+}
+
+.contato button {
+    background: #606C38;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.contato button:hover {
+    background: #283618;
+}
+
+/* FOOTER */
+.footer {
+    background: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* Seção de QR Code */
+.qr-section {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.qr-container {
+    display: none; /* Inicialmente oculto */
+    margin-top: 20px;
+}
+
+.qr-container img {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.qr-section button {
+    background: #606C38; 
+    color: #F9F9F9;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.qr-section button:hover {
+    background: #283618; 
+    transform: scale(1.1);
+}

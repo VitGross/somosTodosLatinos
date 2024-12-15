@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cocina Mexicana</title>
+    <meta name="description" content="Explora los sabores tradicionales de la cocina mexicana con nuestras deliciosas recetas y descubre su rica historia y curiosidades.">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
+    <link rel="shortcut icon" href="IMG/logo.ico" type="image/x-icon">
+    
+    <!-- AOS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script> 
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Bienvenidos a la Cocina Mexicana</h1>
+            <p>Explora los sabores tradicionales de México</p>
+            <a href="#receitas" class="botao-header">Ver Recetas</a>
+        </div>
+    </header>
+
+    <nav class="barra-nav">
+        <div class="container-nav">
+            <nav class="menu-nav">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#receitas">Recetas</a></li>
+                    <li><a href="#contato">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </nav>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>¿Qué es la Cocina Mexicana?</h2>
+
+            <p>La historia de la cocina mexicana es muy rica, diferentes naciones, personas y eventos la moldearon hasta llegar a ser como la conocemos hoy, con su sabor y técnicas únicas.</p>
+            
+            <div class="container">
+                <div class="lista-topicos">
+                    <div class="item-sobre">
+                        <h3>Pueblos Precolombinos</h3>
+                        <p>Civilizaciones indígenas que consumían los ingredientes nativos de la región como el maíz, el tomate, el frijol, el pimiento y la calabaza.</p>
+                    </div>
+                    
+                    <div class="item-sobre">
+                        <h3>Conquistadores Españoles</h3>
+                        <p>llegaron a México trayendo consigo diversos tipos de alimentos como carne, lácteos y especias.</p>
+                    </div>
+
+                    <div class="item-sobre">
+                        <h3>Influencia árabe</h3>
+                        <p>hubo una gran ocupación musulmana en la Península Ibérica, lo que dio lugar a una gran influencia árabe en la cultura española, que se trasladó posteriormente a México.</p>
+                    </div>
+
+                    <div class="item-sobre">
+                        <h3>Influencia africana</h3>
+                        <p>La esclavización de la población africana llevó a que la cultura de este pueblo se transmitiera al pueblo mexicano con conocimientos como técnicas de cultivo más eficientes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="botão" onclick="toggleCuriosidades()">Curiosidades</button>
+            
+            <div id="curiosidades" style="display: none;">
+                <h3>La tortilla surgió como sustituto de los cubiertos.</h3>
+                <p>La tortilla surgió como sustituto de los cubiertos.Como en la antigüedad los cubiertos no eran tan accesibles, la tortilla mexicana cobró suma importancia ya que es un alimento fácil de manipular y en su interior se puede poner casi cualquier relleno.</p>
+
+                <h3> La pimienta se utiliza para regular la temperatura corporal.</h3>
+                <p>Todos sabemos que la pimienta es un ingrediente que no puede faltar en la cocina mexicana, pero se usa tanto porque los mexicanos creen que al comer alimentos picantes su cuerpo se equilibra con el calor ambiental, que puede llegar hasta los 50 C.</p>
+
+                <h3>Origen del chile</h3>
+                
+                <p>Aunque el chili se asocia comúnmente con la cocina estadounidense, el origen del plato es incierto. Es por eso que a México y Texas se les atribuye este platillo.</p>
+
+                <h3>Cactus como alimento</h3>
+                <p>Aunque el cactus en la mayoría de lugares es sólo una planta decorativa, es sumamente rico en vitaminas, y en México se utiliza para elaborar algunos platos típicos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="receitas" data-aos="fade-left">
+        <h2>Recetas Populares</h2>
+
+        <div class="cartoes-receitas">
+            <div class="cartao" data-aos="fade-up">
+
+                <img src="IMG/tacos.jpg" alt="Tacos" class="card-img">
+
+                <h3>Tacos <i class="fas fa-taco"></i></h3>
+                <p>Deliciosos tacos con carne asada, pollo o al pastor.</p>
+
+                <a href="https://www.tudogostoso.com.br/receita/9303-tacos-mexicanos.html" target="_blank"><button class="botao-receita">Ver receta</button></a>
+            </div>
+
+            <div class="cartao" data-aos="fade-up">
+
+                <img src="IMG/guacamole.jpg" alt="Guacamole" class="card-img">
+
+                <h3>Guacamole <i class="fas fa-pepper-hot"></i></h3>
+                <p>El acompañante perfecto para tus tacos y totopos.</p>
+
+                <a href="https://www.tudogostoso.com.br/receita/117158-guacamole.html" target="_blank"><button class="botao-receita">Ver receta</button></a>
+            </div>
+
+            <div class="cartao" data-aos="fade-up">
+
+                <img src="IMG/chiles.jpg" alt="Chiles en Nogada" class="card-img">
+
+                <h3>Chiles en Nogada <i class="fas fa-chili-pepper"></i></h3>
+                <p>Un platillo mexicano elegante con un sabor único.</p>
+
+                <a href="https://www.tudogostoso.com.br/receita/167797-chilli-mexicano.html" target="_blank"><button class="botao-receita">Ver receta</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Da un Feedback o sugerencias para mejorarmos.</p>
+            <form>
+                <input type="text" placeholder="Tu Nombre" required>
+                <input type="email" placeholder="Tu Email" required>
+                <textarea placeholder="Tu Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="qr-section">
+            <button id="show-qr" class="botão">Exibir QR Code</button>
+            <div id="qr-container" class="qr-container">
+                <img id="qr-code" src="" alt="QR Code" />
+            </div>
+        </div>
+        
+        <div class="container">
+            <p>&copy; 2024 Cocina Mexicana - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
